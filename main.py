@@ -20,6 +20,8 @@ for NUM in nums:
 
         if i == 0:
             print("start audio editing")
+            UtilitiesAudioEditing.cut_output_stream(video_path=path_dict["audio"], index=index,
+                                                    start=time_start, end=time_end, save_path=path_info.result_folder)
 
         elif content_list[-1] == sub.content:
             print("skip the index: {}".format(index))
